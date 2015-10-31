@@ -8,11 +8,12 @@ namespace Demo_Events_PointChanged
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             double x, y;
             Point pointA = new Point();
-            
+
             pointA.PointChanged += HandlePointChanged;
 
             Console.WriteLine("The current coordinates are: ({0}, {1})\n", pointA.X, pointA.Y);
@@ -27,12 +28,19 @@ namespace Demo_Events_PointChanged
 
             Console.WriteLine("\nThe new coordinates are: ({0}, {1})", pointA.X, pointA.Y);
 
-            Console.ReadKey();                       
+            Console.ReadKey();
         }
 
-        public static void HandlePointChanged(object point, EventArgs e)
+        public static void HandlePointChanged(object point, PointChangedEventArgs eventArgs)
         {
-            Console.WriteLine("The point changed.");
+            if (eventArgs.OriginalPointX != eventArgs.NewPointX)
+            {
+                Console.WriteLine("The X coordinate was changed from {0} to {1}\n", eventArgs.OriginalPointX, eventArgs.NewPointX);
+            }
+            else
+            {
+                Console.WriteLine("The Y coordinate was changed from {0} to {1}\n", eventArgs.OriginalPointY, eventArgs.NewPointY);
+            }
         }
     }
 }
