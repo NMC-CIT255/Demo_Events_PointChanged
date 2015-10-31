@@ -10,11 +10,22 @@ namespace Demo_Events_PointChanged
     {
         static void Main(string[] args)
         {
+            double x, y;
             Point pointA = new Point();
             
             pointA.PointChanged += HandlePointChanged;
 
-            pointA.X = 3.0;
+            Console.WriteLine("The current coordinates are: ({0}, {1})\n", pointA.X, pointA.Y);
+            Console.Write("Enter the new X coordinate: ");
+            x = int.Parse(Console.ReadLine());
+            Console.Write("Enter the new Y coordinate: ");
+            y = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+            pointA.X = x;
+            pointA.Y = y;
+
+            Console.WriteLine("\nThe new coordinates are: ({0}, {1})", pointA.X, pointA.Y);
 
             Console.ReadKey();                       
         }

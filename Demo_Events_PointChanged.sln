@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_Events_PointChanged.D02", "Demo_Events_PointChanged\Demo_Events_PointChanged.D02.csproj", "{9ED0269F-FD3F-4A0E-AEAF-3B9AC465F582}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_Events_PointChanged.D02", "Demo_Events_PointChanged.D02\Demo_Events_PointChanged.D02.csproj", "{9ED0269F-FD3F-4A0E-AEAF-3B9AC465F582}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_Events_PointChanged.D01", "Demo_Events_PointChanged.D01\Demo_Events_PointChanged.D01.csproj", "{8F216C16-F7D1-4BD6-9613-463C815BE125}"
 EndProject

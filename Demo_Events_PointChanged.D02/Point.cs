@@ -31,6 +31,12 @@ namespace Demo_Events_PointChanged
             }
         }
 
+        public Point()
+        {
+            _x = 0;
+            _y = 0;
+        }
+
         public event EventHandler PointChanged;
 
         public void OnPointChanged()
